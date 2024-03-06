@@ -1,0 +1,16 @@
+.achrtag {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    padding-right: 15px;
+  }
+
+  span {
+    width: 42px;
+  }
+}

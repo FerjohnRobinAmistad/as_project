@@ -1,15 +1,10 @@
-import React from 'react'
-import BrandCard from "../components/BrandCard"
+import React from "react";
+import Header from "../components/layout/header/Header";
 
 export default function LandingPage() {
-    return (
-        <div>
-            LandingPage
-            <BrandCard
-                title="Example Card"
-                content="This is an example card component."
-                imageUrl="https://example.com/image.jpg"
-            />
-        </div>
-    )
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
