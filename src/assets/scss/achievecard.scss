@@ -1,0 +1,68 @@
+.achieve-card {
+  display: flex;
+  gap: 35px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #CCCCCC;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .content-container {
+    margin-top: 30px;
+
+    @media screen and (max-width: 960px) {
+      margin-top: 20px;
+
+    }
+    .content {
+        h3 {
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    .date-text {
+        margin-top: 30px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        
+        @media screen and (max-width: 960px) {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 10px
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 32px;
+            letter-spacing: 0.14px;
+        }
+        .box-container {
+            gap: 10px;
+            display: flex;
+            .box {
+                border: 2px solid #5d5d5d;
+                padding: 1px 10px;
+
+                span {
+                    font-size: 11px;
+                    line-height: 30px;
+                    letter-spacing: 0.055px;
+                  }
+            }
+        }
+    }
+  }
+}
