@@ -15,6 +15,14 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.15px;
+  padding: 9px 0;
+  .label {
+    position: relative;
+    z-index: 2;
+  }
+  @media screen and (max-width: 1030px) {
+    font-size: 13px;
+  }
 
   &:hover {
     color: #eee;
@@ -33,7 +41,7 @@
     background-color: #c70009;
     transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 1;
   }
 
   &:hover span {
