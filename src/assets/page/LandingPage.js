@@ -1,15 +1,13 @@
-import React from 'react'
-import BrandCard from "../components/BrandCard"
+import React from "react";
+import SimpleButton from "../components/SimpleButton";
+import Button from "../components/Button";
+import icon from "../images/button/arrow.png";
 
 export default function LandingPage() {
-    return (
-        <div>
-            LandingPage
-            <BrandCard
-                title="Example Card"
-                content="This is an example card component."
-                imageUrl="https://example.com/image.jpg"
-            />
-        </div>
-    )
+  return (
+    <>
+      <SimpleButton link={""} label={"詳しく見る"} />
+      <Button style={"btn2"} link={""} label={"お問い合わせ"} icon={icon} />
+    </>
+  );
 }

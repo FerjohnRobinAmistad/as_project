@@ -1,0 +1,100 @@
+.btn {
+  color: #b2152d;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  // max-width: 250px;
+  border-radius: 5px;
+  margin: 1rem auto;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #b2152d;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+
+  &:hover {
+    color: #eee;
+  }
+
+  &:active {
+    background-color: #00c4ad;
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #c70009;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &:hover span {
+    width: 225%;
+    height: 562.5px;
+  }
+}
+
+.btn2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  // max-width: 250px;
+  // margin: 1rem auto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  background-color: #7d868f;
+  color: white;
+  border: unset;
+  padding: 22px 0;
+
+  .arrow {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 40%;
+    right: 24px;
+    transform: translate(-50%, 0);
+    z-index: 2;
+  }
+  .label {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover {
+    color: #eee;
+  }
+
+  &:active {
+    background-color: #00c4ad;
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #c70009;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &:hover span {
+    width: 225%;
+    height: 562.5px;
+  }
+}
